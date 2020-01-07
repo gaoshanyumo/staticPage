@@ -1,0 +1,414 @@
+*{
+	margin: 0;
+	padding: 0;}
+
+a{text-decoration: none;}
+li{list-style: none;}
+
+/*整体框架设置*/
+header,
+section,
+footer{
+	box-sizing: border-box;
+	width: 100%;
+	/*border: solid 1px;*/
+	overflow: hidden;
+}
+
+
+/*设置整个页面的头部header开始*/
+header{
+	display: flex;
+	align-items: center;
+	background: rgb(76,76,76);
+}
+
+.index-header-logo{
+	height: 50px;
+	flex: 3;
+	background: url(../img/6c7ccc5c6ac5bdbaff0d8dd779b1eb8a_origin.png) 40% center no-repeat;
+	background-size: 160px;
+}
+
+.index-header-nav{
+	display: flex;
+	flex: 7;
+}
+
+.index-header-nav li{
+	margin-left: 4%;
+	padding: 20px 0;
+	color: white;
+	position: relative;
+}
+
+.index-header-nav li:nth-child(2) img{
+	position: absolute;
+	top: 6px;
+	left: 30px;
+}
+
+.index-header-nav li:last-child{
+	padding: 14px 0;
+	border-right: solid 1px white;
+	align-self: center;
+}
+
+.index-header-loginRegister{
+	flex: 3;
+}
+
+.index-header-loginRegister a{
+	color: lightgray;
+}
+
+.index-header-loginRegister a:last-child{
+	margin-left: 20px;
+}
+
+.index-header-menu{
+	display: none;
+}
+
+/*设置整个页面的头部header结束*/
+
+/*初中高教程部分开始*/
+.yipai-course{
+	padding: 20px 10%;
+	text-align: center;
+	
+	background: url(../img/21ce81a1efc6f9b71b5b8758b54cd32a.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.yipai-course-cup img{
+	width: 60px;
+}
+
+.yipai-course-cup figcaption{
+	margin-top: 20px;
+	font-size: 20px;
+	color: gray;
+	font-weight: 400;
+}
+
+.yipai-course div{
+	display: flex;
+	justify-content: space-around;
+	padding: 36px 0;
+}
+
+.yipai-course div figure{
+	width: 16%;
+}
+
+.yipai-course div img{
+	width: 100%;
+	border-radius: 50%;
+}
+
+.yipai-course div figcaption{
+	padding: 20px 0;
+}
+
+.yipai-course span{
+	display: inline-block;
+	width: 140px;
+	padding: 8px 0;
+	color: white;
+	border-radius: 4px;
+	background: orange;
+}
+
+.yipai-course span:last-child{
+	margin-left: 50px;
+}
+
+/*初中高教程部分结束*/
+
+
+/*准备工作部分开始*/
+.yipai-jobReady{
+	padding: 16px 10%;
+	text-align: center;
+}
+
+.h2-set{
+	text-align: center;
+}
+
+.yipai-jobReady-contents{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.yipai-jobReady-contents div{
+	width: 48%;
+	/*border: solid 1px;*/
+}
+
+.yipai-jobReady-contents figure{
+	width: 100%;
+	height: 170px;
+	padding: 20px 0;
+	background: #E7E7E7;
+}
+
+.yipai-jobReady-contents div:first-of-type img{
+	display: block;
+	height: 60px;
+	margin: auto;
+	padding: 26px;
+}
+
+.yipai-jobReady-contents div:first-of-type span{
+	padding: 6px 14px;
+	color: white;
+	background: gray;
+}
+
+.p-set{
+	padding: 16px 50px;
+	color: gray;
+}
+
+
+.yipai-jobReady-contents div:last-of-type img{
+	display: block;
+	height: 110px;
+	margin: auto;
+	padding: 26px;
+}
+/*准备工作部分结束*/
+
+/*更多帮助部分开始*/
+.yipai-moreHelp{
+	padding: 40px 10%;
+	text-align: center;
+	background: #E3E3E3;
+}
+
+.yipai-moreHelp-contents{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+
+.yipai-moreHelp-item{
+	width: 31%;
+	/*border: solid 1px;*/
+}
+
+.yipai-moreHelp-item figure{
+	box-sizing: border-box;
+	width: 100%;
+	height: 180px;
+	padding-top: 16px;
+	background: white;
+}
+
+.yipai-moreHelp-item img{
+	height: 70px;
+	margin-top: 40px;
+}
+/*更多帮助部分结束*/
+
+/*典型案例部分开始*/
+.yipai-samples{
+	padding: 40px 10%;
+	text-align: center;
+}
+
+hgroup p{
+	margin-top: 20px;
+	color: gray;
+}
+
+.yipai-samples div{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 26px;
+}
+
+.yipai-samples figure{
+	width:19%;
+}
+
+.yipai-samples img{
+	width: 100%;
+}
+
+.yipai-samples figcaption{
+	padding: 14px 0;
+	color: gray;
+}
+
+.more-p{
+	margin-top: 50px;
+}
+/*典型案例部分结束*/
+
+/*页面的脚部开始*/
+.index-footer{
+	padding: 30px 9%;
+	color: white;
+	font-size: 14px;
+	background: #454545;
+}
+
+.ft-top{
+	padding: 10px 1%;
+	display: flex;
+}
+
+.ft-top dl,
+.ft-top-connect{
+	flex: 4;
+	/*border: solid 1px white;*/
+}
+
+.ft-top dl{
+	color: gray;
+}
+
+.ft-top dt{
+	margin-bottom: 16px;
+}
+
+.ft-top dd{
+	font-size: 14px;
+}
+
+.ft-top-connect{
+	display: flex;
+	color: white;
+}
+
+.ft-top-connect ul:last-of-type{
+	margin-left: 10%;
+}
+
+.ft-top-connect img{
+	width: 30px;
+	padding: 0 6px;
+	vertical-align: middle;
+}
+
+.ft-top-logo{
+	box-sizing: border-box;
+	flex: 2;
+	align-self: flex-end;
+	color: white;
+	text-align: right;
+	/*border: solid 1px white;*/
+}
+
+.ft-top-logo img{
+	width: 200px;
+	margin-top: 14px;
+}
+
+.ft-middle{
+	display: flex;
+	padding: 14px 1%;
+	border-top: solid 1px lightgray;
+}
+
+.ft-middle dl{
+	width: 50%;
+	display: flex;
+	line-height: 1.6;
+}
+
+.ft-middle dt{
+	width: 80px;
+	/*border: solid 1px white;*/
+}
+
+.ft-middle dd{
+	width: 76%;
+}
+
+.ft-middle div{
+	width: 50%;
+	text-align: right;
+	line-height: 1.6;
+}
+
+.ft-bottom{
+	padding: 0 1%;
+	line-height: 2;
+}
+/*页面的脚部结束*/
+
+
+/*媒介查詢做響應式*/
+@media only screen and (max-width: 900px) {
+	.index-header-nav,
+	.index-header-loginRegister,
+	.yipai-samples,
+	.ft-bottom{
+		display: none;
+	}
+	
+	.index-header-logo{
+		background-position: 20px center;
+		background-size: 120px;
+	}
+	
+	.index-header-menu{
+		display: block;
+		padding-right: 40px;
+	}
+	
+	.index-header-menu img{
+		height: 24px;
+		cursor: pointer;
+	}
+
+	.yipai-course span{
+		display: block;
+		width: 60%;
+		margin:14px auto!important;
+	}
+	
+	.yipai-jobReady,
+	.yipai-moreHelp{
+		padding: 16px 5%;
+	}
+	
+	.yipai-jobReady-contents,
+	.yipai-moreHelp-contents,
+	.ft-top,
+	.ft-middle{
+		flex-direction: column;
+	}
+	
+	.yipai-jobReady-contents div,
+	.yipai-moreHelp-contents div,
+	.ft-middle dl,
+	.ft-middle div{
+		width: 100%;
+	}
+	
+	.yipai-jobReady-contents div:first-of-type span{
+		display: block;
+		width: 50%;
+		margin: auto;
+	}
+	
+	.index-footer{
+		padding: 30px 5%;
+	}
+	
+	.ft-top-connect{
+		margin: 16px 0;
+	}
+	
+	.ft-top-logo,
+	.ft-middle div{
+		width: 100%;
+		text-align: left;
+	}
+}

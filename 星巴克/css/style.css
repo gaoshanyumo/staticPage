@@ -1,0 +1,330 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+aside,
+.container {
+	box-sizing: border-box;
+	overflow: hidden;
+	/*border: solid 1px;*/
+}
+
+aside {
+	width: 30%;
+	padding: 20px;
+	position: fixed;
+}
+
+.aside-header {
+	display: flex;
+	align-items: center;
+}
+
+.aside-header-logo img {
+	width: 40px;
+	cursor: pointer;
+}
+
+.aside-header-nav {
+	min-width: 200px;
+	flex-grow: 1;
+	display: flex;
+	/*border: solid 1px;*/
+}
+
+.aside-header-menu img {
+	width: 30px;
+	cursor: pointer;
+}
+
+.aside-header-nav li {
+	margin-left: 22px;
+	padding: 20px 0;
+	cursor: pointer;
+}
+
+.aside-header-nav li:hover {
+	padding: 20px 0 16px;
+	color: red;
+	border-bottom: solid 4px lightgray;
+}
+
+.aisde-desc {
+	margin-top: 400px;
+}
+
+.aisde-desc p {
+	margin-top: 34px;
+}
+
+.aisde-desc img {
+	vertical-align: middle;
+}
+
+.aisde-desc a {
+	color: #00A862;
+}
+
+.aisde-desc a:last-of-type,
+.starbucks-club-desc span {
+	/*display: inline-block;*/
+	margin-left: 40px;
+	padding: 4px 16px;
+	color: #00A862;
+	border: solid 1px;
+	border-radius: 30px;
+}
+
+.container {
+	box-sizing: border-box;
+	width: 70%;
+	padding-left: 3px;
+	/*height: 2000px;*/
+	margin-left: 30%;
+	box-shadow: 3px 0 3px lightgray inset;
+}
+
+.banner img {
+	display: block;
+	width: 100%;
+}
+
+.banner img:last-of-type {
+	display: none;
+}
+
+.starbucks-ad {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	background: #F7F7F7;
+}
+
+.starbucks-ad img {
+	display: block;
+	width: 32%;
+	height: 0%;
+}
+
+.starbucks-club {
+	box-sizing: border-box;
+	padding: 40px 10%;
+	/*padding: 40px 0;*/
+	display: flex;
+	/*justify-content: center;*/
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*.starbucks-club div{
+	margin: 0 40px;
+}*/
+
+.h2-set {
+	font-weight: 500;
+}
+
+.p-set {
+	padding: 20px 0;
+	line-height: 2;
+	color: gray;
+}
+
+.p-set br:last-of-type {
+	display: none;
+}
+
+.starbucks-club-desc a {
+	color: orange;
+}
+
+
+/*.starbucks-club-desc span{
+	padding: 4px 16px;
+	color: #00A862;
+	border: solid 1px;
+	border-radius: 30px;
+}*/
+
+.starbucks-club-desc span:first-of-type {
+	margin-left: 0;
+}
+
+.starbucks-selected {
+	box-sizing: border-box;
+	padding: 40px 10%;
+	text-align: center;
+	background: #F7F7F7;
+}
+
+.starbucks-selected-card {
+	display: flex;
+	justify-content: space-between;
+}
+
+.starbucks-selected-card figure {
+	box-sizing: border-box;
+	width: 22%;
+	margin-top: 80px;
+	padding: 60px 30px 30px;
+	background: white;
+	position: relative;
+	box-shadow: 0 0 2px 2px gray;
+}
+
+.starbucks-selected-card img {
+	display: block;
+	width: 70px;
+	position: absolute;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.starbucks-selected-card p {
+	padding: 10px 0 20px;
+	line-height: 2;
+}
+
+.starbucks-selected-card a {
+	color: orange;
+	font-size: 12px;
+}
+
+.starbucks-classes {
+	box-sizing: border-box;
+	padding: 40px 0;
+}
+
+.starbucks-classes hgroup {
+	text-align: center;
+}
+
+.starbucks-classes div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.starbucks-classes figure {
+	width: 24%;
+	position: relative;
+	border: solid 1px lightgray;
+}
+
+.starbucks-classes img {
+	display: block;
+	width: 100%;
+}
+
+.starbucks-classes figcaption {
+	padding: 16px;
+}
+
+.starbucks-classes span {
+	display: inline-block;
+	padding: 4px 10px;
+	color: white;
+	background: #C2A661;
+	position: absolute;
+	top: 8px;
+	left: 0;
+}
+
+footer{
+	display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+	aside {
+		/*默认的*/
+		position: static;
+		width: 100%;
+	}
+	.aisde-desc {
+		margin-top: 30px;
+	}
+	.container {
+		width: 100%;
+		margin-left: 0;
+		padding-left: 0;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.aside-header,
+	.aisde-desc p,
+	.banner img:first-of-type,
+	.p-set br:first-of-type {
+		display: none;
+	}
+	.aisde-desc {
+		margin-top: 0;
+	}
+	.banner img:last-of-type {
+		display: block;
+	}
+	.starbucks-ad,
+	.starbucks-club {
+		flex-direction: column;
+		text-align: center;
+	}
+	.starbucks-ad img {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.starbucks-club-desc {
+		width: 100%;
+	}
+	.starbucks-club-logo {
+		width: 100%;
+		margin-top: 40px;
+	}
+	.p-set br:last-of-type {
+		display: block;
+	}
+	
+	.starbucks-selected{
+		padding: 40px 16px;
+	}
+	
+	.starbucks-selected-card{
+		flex-wrap: wrap;
+	}
+	
+	.starbucks-selected-card figure{
+		width: 48%;
+	}
+	
+	footer{
+		width: 100%;
+		padding: 4px 0;
+		display: flex;
+		justify-content: space-around;
+		box-shadow: 0 -2px 2px lightgray;
+		
+		position: fixed;
+		bottom: 0;
+		background: white;
+	}
+	
+	footer figure{
+		text-align: center;
+		font-size: 14px;
+		cursor: pointer;
+	}
+	
+	footer img{
+		width: 100%;
+	}
+}

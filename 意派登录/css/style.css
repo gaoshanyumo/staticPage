@@ -1,0 +1,131 @@
+/*==== 头部 ====*/
+div.header{
+	background: #4C4C4C;
+}
+
+div.logo,
+div.login-register,
+ul.nav{
+	float: left;
+	width: 25%;
+}
+
+div.logo>h1{
+	height: 44px;
+	width: 160px;
+	margin-top: 9px;
+	margin-left: 140px;
+	text-indent: -9999px;
+	overflow: hidden;
+	/*border: solid 1px yellow;*/
+	background: url(../img/6c7ccc5c6ac5bdbaff0d8dd779b1eb8a_origin.png) no-repeat;
+	background-size: 100%;
+}
+
+ul.nav{
+	color: white;
+	width: 50%!important;
+
+}
+
+ul.nav>li{
+	float: left;
+	padding: 22px 20px;
+	cursor: pointer;
+	border: solid;
+	position: relative;
+}
+
+ul.nav>li:hover{
+	color: red;
+}
+
+ul.nav>li:nth-of-type(2)>img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+ul.nav>li:last-of-type{
+	margin-top: 18px;
+	padding: 14px 20px 14px 0;
+	border-right: solid 1px white;
+}
+
+div.login-register>a{
+	display: inline-block;
+	margin-top: 22px;
+	color: #D3D3D3;
+	font-size: 15px;
+}
+
+div.login-register>a:last-of-type{
+	margin-left: 24px;
+}
+
+/*==== 教程部分 ====*/
+div.courses{
+	padding: 20px 0;
+	text-align: center;
+	background: #E5E7E6;
+}
+
+/*div.cup,
+div.courses-items,
+div.ds-btn{
+	border: solid 1px;
+}*/
+
+/*div.cup{
+	padding-top: 20px;
+}*/
+
+div.cup>img{
+	width: 60px;
+}
+
+div.cup>p{
+	margin-top: 30px;
+	font-size: 22px;
+	color: #8E8080;
+}
+
+div.courses-items{
+	width: 1260px;
+	margin:36px auto 0;
+}
+
+div.course-item{
+	float: left;
+}
+
+div.course-item:first-of-type~div.course-item{
+	margin-left: 264px;
+}
+
+div.course-item>img{
+	width: 244px;
+	border-radius: 50%;
+}
+
+div.course-item>p{
+	margin-top: 26px;
+}
+
+div.ds-btn{
+	margin-top: 58px;
+}
+
+div.ds-btn>button{
+	width: 140px;
+	padding: 10px 0;
+	color: white;
+	text-align: center;
+	background: #FFA500;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+div.ds-btn>button:last-of-type{
+	margin-left: 46px;
+}

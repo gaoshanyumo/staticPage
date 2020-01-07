@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+
+.clearfix::after{
+	display: block;
+	height: 0;
+	content: "";
+	visibility: hidden;
+	clear: both;
+}
+
+/*img{
+	display: block;
+}*/
+
+button,input{
+	/*外轮廓线*/
+	outline: none;
+	/*边框*/
+	border: none;
+	/*背景*/
+	background: none;
+}
